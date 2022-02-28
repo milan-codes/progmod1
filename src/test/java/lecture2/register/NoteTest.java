@@ -1,4 +1,4 @@
-package register;
+package lecture2.register;
 
 import org.junit.jupiter.api.Test;
 

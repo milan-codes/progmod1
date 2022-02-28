@@ -1,4 +1,4 @@
-package calculator;
+package lecture1.calculator;
 
 import org.junit.jupiter.api.Test;
 

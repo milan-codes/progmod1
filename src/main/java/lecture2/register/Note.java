@@ -1,4 +1,4 @@
-package register;
+package lecture2.register;
 
 public class Note {
     private String name;
