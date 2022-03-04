@@ -5,22 +5,22 @@ public class NumbersMain {
     /**
      * Task 1: Create a main method into NumbersMain class.
      * Create new variables:
-     *   - Name: a, type: int, value: 5
-     *   - Name: b, type: Integer, value: 5
-     *   - Name: c, type: Integer, value: variable a
-     *   - Name: d, type: Integer, value: variable b
-     *   - Name: e, type: Integer, value: new Integer object created with literal 5
-     *   - Name: f, type: int, value: new Integer object created with literal 5
-     *   - Name: g, type: int, value: new Integer object created with variable a
-     *   - Name: h, type: int, value: new int value get by intValue method of variable c
-     *   - Name: i, type: int, value: parsed from literal "5"
-     *   - Name: j, type: Integer, value: parsed from literal "5"
+     * - Name: a, type: int, value: 5
+     * - Name: b, type: Integer, value: 5
+     * - Name: c, type: Integer, value: variable a
+     * - Name: d, type: Integer, value: variable b
+     * - Name: e, type: Integer, value: new Integer object created with literal 5
+     * - Name: f, type: int, value: new Integer object created with literal 5
+     * - Name: g, type: int, value: new Integer object created with variable a
+     * - Name: h, type: int, value: new int value get by intValue method of variable c
+     * - Name: i, type: int, value: parsed from literal "5"
+     * - Name: j, type: Integer, value: parsed from literal "5"
      * Print these variables.
      * Convert literals and variables:
-     *   - int (5 and 32768) to byte
-     *   - int (5 and 32768) to short
-     *   - int (5 and 32768) to long
-     *   - long (22_000_000L) to int
+     * - int (5 and 32768) to byte
+     * - int (5 and 32768) to short
+     * - int (5 and 32768) to long
+     * - long (22_000_000L) to int
      */
 
     public static void main(String[] args) {
@@ -59,11 +59,11 @@ public class NumbersMain {
     }
 
     private static void convertIntToByteAndPrint(int num) {
-        System.out.printf("int %d in byte: 0x%02X\n", num, (byte)num);
+        System.out.printf("int %d in byte: 0x%02X\n", num, (byte) num);
     }
 
     private static void convertIntToShort(int num) {
-        System.out.printf("int %d in short: %d\n", num, (short)num);
+        System.out.printf("int %d in short: %d\n", num, (short) num);
     }
 
     private static void convertIntToLong(int num) {
@@ -71,7 +71,7 @@ public class NumbersMain {
     }
 
     private static void convertLongToInt(long num) {
-        System.out.printf("long %d in int: %d\n", num, (int)num);
+        System.out.printf("long %d in int: %d\n", num, (int) num);
     }
 
     public static int subtractFiveIfGreaterThanFive(int number) {
@@ -82,7 +82,7 @@ public class NumbersMain {
     }
 
     public static double convertDoubleToDouble(double number) {
-        int intNum = (int)number;
+        int intNum = (int) number;
         return (double) intNum;
     }
 
@@ -90,12 +90,12 @@ public class NumbersMain {
         if (number < 0 || number > 127) {
             return -1;
         }
-        return (byte)number;
+        return (byte) number;
     }
 
     public static int getFirstDecimal(double number) {
         int intPartOfNumber = (int) number;
         double realPart = number - intPartOfNumber;
-        return (int)(realPart*10);
+        return (int) (realPart * 10);
     }
 }

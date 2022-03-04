@@ -5,7 +5,8 @@ public class Song {
     private String title;
     private double lengthInMinutes;
 
-    public Song() {}
+    public Song() {
+    }
 
     public Song(String band, String title, double length) {
         this.band = band;

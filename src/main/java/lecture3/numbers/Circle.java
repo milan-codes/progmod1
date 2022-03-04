@@ -12,10 +12,10 @@ public class Circle {
     }
 
     public double getArea() {
-        return Math.pow(radius, 2)*Math.PI;
+        return Math.pow(radius, 2) * Math.PI;
     }
 
     public double getPerimeter() {
-        return 2*radius*Math.PI;
+        return 2 * radius * Math.PI;
     }
 }

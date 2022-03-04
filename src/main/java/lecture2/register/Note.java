@@ -5,7 +5,8 @@ public class Note {
     private String topic;
     private String text;
 
-    public Note() {}
+    public Note() {
+    }
 
     public Note(String topic, String text) {
         name = "Anonymous";
