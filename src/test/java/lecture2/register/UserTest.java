@@ -1,5 +1,6 @@
 package lecture2.register;
 
+import lecture6.inheritance.EyeColor;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -50,4 +51,12 @@ public class UserTest {
         user.setBirthYear(baseYear);
         assertEquals(expectedAge, user.ageIn(year));
     }
+
+
+    @Test
+    public void testEyeColorConstructor() {
+        User blueEyeUser = new User("John Doe", 2000, "Baker Street", EyeColor.BLUE);
+        assertEquals(EyeColor.BLUE, blueEyeUser.getEyeColor());
+    }
+
 }
